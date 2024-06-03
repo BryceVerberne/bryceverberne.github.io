@@ -1,34 +1,29 @@
-Read Only by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Portfolio
 
+Welcome to the repository for my personal portfolio website. This website showcases my background, skills, projects, and contact information as I pursue career opportunities in tech.
 
-Just a super simple single-page responsive template built for personal sites and portfolios
-(although it'd definitely work for other stuff too). Includes a contact form, pre-styled
-elements, and Sass sources.
+## Credits
+Design:
+- [HTML5 UP](https://html5up.net)
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Demo Images:
+- [Unsplash](https://unsplash.com)
 
-(* = Not included)
+Icons:
+- [Font Awesome](https://fontawesome.io)
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+Other:
+- [jQuery](https://jquery.com)
+- [Scrollex](https://github.com/ajlkn/jquery.scrollex)
+- [Responsive Tools](https://github.com/ajlkn/responsive-tools)
+- [Messaging API](https://formspree.io)
 
-AJ
-aj@lkn.io | @ajlkn
+## License
+This project is licensed under the Creative Commons Attribution 3.0 Unported See the [LICENSE.txt](LICENSE.txt) file for details.
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+## Contact
+For any questions or suggestions, feel free to reach out via email at [bryceverberne@gmail.com](mailto:bryceverberne@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/bryce-verberne/).
 
+---
 
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Thank you for visiting my portfolio repository!
