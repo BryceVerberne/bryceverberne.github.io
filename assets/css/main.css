@@ -2652,6 +2652,10 @@ input, select, textarea {
 
 /* Features */
 
+.features article .image a {
+	margin-top: 5px;
+}
+
 .features article {
 	border-top: solid 3px #f4f4f4;
 	margin-bottom: 2.25em;
@@ -2668,6 +2672,7 @@ input, select, textarea {
 		padding-right: 2.5em; /* Adjust padding as needed */
 		vertical-align: top; /* Align image to the top */
 		width: 48%;
+
 	}
 
 		.features article .image img {
