@@ -3326,3 +3326,7 @@ input, select, textarea {
 .resume {
 	margin-bottom: 15px;
 }
+
+#one .container a {
+	margin-bottom: 20px;
+}
