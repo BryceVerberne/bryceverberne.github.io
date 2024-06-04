@@ -2099,13 +2099,7 @@ button,
       padding-top: 6.5em; }
       #header .logo {
         font-size: 1.25em;
-        margin: 0; }
-      #header .icons {
-        height: 5em;
-        line-height: 5em;
-        position: absolute;
-        right: -0.5em;
-        top: 0; } }
+        margin: 0; }}
 
 /* Banner */
 #banner {
