@@ -2552,7 +2552,7 @@ input, select, textarea {
 		input[type="reset"].icon,
 		input[type="button"].icon,
 		.button.icon {
-			padding-left: 1.35em;
+			padding: 0 1.35em 0 1.35em;
 		}
 
 			input[type="submit"].icon:before,
@@ -2654,6 +2654,7 @@ input, select, textarea {
 
 .features article .image a {
 	margin-top: 5px;
+	min-width: 100px;
 }
 
 .features article {
