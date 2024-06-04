@@ -3320,3 +3320,8 @@ input, select, textarea {
 			}
 
 	}
+
+/* Additions */
+.resume {
+	margin-bottom: 15px;
+}
