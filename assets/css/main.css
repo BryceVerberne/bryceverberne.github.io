@@ -3323,10 +3323,72 @@ input, select, textarea {
 	}
 
 /* Additions */
+
+/* Resume Button Formatting */
 .resume {
 	margin-bottom: 15px;
 }
-
 #one .container a {
 	margin-bottom: 20px;
 }
+
+/* Project Image Layout */
+.frame-container {
+	min-width: 300px; /* Adjust the width as needed */
+	min-height: 200px; /* Adjust the height as needed */
+	position: relative;
+	background-image: url('../../media/images/portfolio/backdrop.jpeg'); /* Backdrop image */
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.component-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: transform 0.3s ease;
+	max-width: 250px; /* Adjust the width as needed */
+	height: auto; /* Maintain aspect ratio */
+}
+.frame-container:hover .component-image {
+	transform: translate(-50%, -50%) scale(1.1); /* Adjust the scale factor as needed */
+}
+
+/* Base font size */
+body {
+    font-size: 15px; /* Default font size */
+}
+
+/* Adjust font size for smaller screens */
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 11px;
+    }
+}
+
