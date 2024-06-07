@@ -3505,3 +3505,256 @@ body {
 .expertise-icon.brands:before {
     font-family: 'Font Awesome 5 Brands';
 }
+
+/* Image */
+    .image-gallery {
+        border: 0;
+        border-radius: 4px;
+        display: inline-block;
+        position: relative;
+    }
+
+        .image-gallery img {
+            display: block;
+            border-radius: 4px;
+			height: 200px;
+			width: auto;
+			object-fit: cover;
+        }
+
+        .image-gallery.left, .image-gallery.right {
+			width: 40%;
+			max-width: 10rem;
+        }
+
+            .image-gallery.left img, .image-gallery.right img {
+                width: 100%;
+            }
+
+        .image-gallery.left {
+            float: left;
+            margin: 0 1.5rem 1rem 0;
+            top: 0.25rem;
+        }
+
+        .image-gallery.right {
+            float: right;
+            margin: 0 0 1rem 1.5rem;
+            top: 0.25rem;
+        }
+
+        .image-gallery.fit {
+            display: block;
+            margin: 0 0 2rem 0;
+            width: 100%;
+        }
+
+            .image-gallery.fit img {
+                width: 100%;
+            }
+
+        .image-gallery.main {
+            display: block;
+            margin: 0 0 3rem 0;
+            width: 100%;
+        }
+
+            .image-gallery.main img {
+                width: 100%;
+            }
+
+/* Gallery */
+.gallery {
+	overflow-x: auto; /* Allows horizontal scrolling */
+	margin-bottom: 3em; /* Adds some padding */
+  }
+  
+  .gallery img {
+	height: 200px;
+  }
+
+/* Gallery (style2) */
+    .gallery.style2 {
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+    }
+
+
+
+        .gallery.style2 h1, .gallery.style2 h2, .gallery.style2 h3, .gallery.style2 h4, .gallery.style2 h5, .gallery.style2 h6 {
+            color: #ffffff;
+        }
+
+
+            .gallery.style2 > .forward:before, .gallery.style2 > .backward:before {
+                display: block;
+                top: calc(50% - 1.5rem);
+                width: 4rem;
+                height: 3rem;
+                line-height: 1em;
+                font-size: 3rem;
+                position: absolute;
+                text-align: center;
+            }
+
+
+
+        .gallery.style2 article {
+            -moz-flex-grow: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-grow: 0;
+            flex-grow: 0;
+            -moz-flex-shrink: 0;
+            -webkit-flex-shrink: 0;
+            -ms-flex-shrink: 0;
+            flex-shrink: 0;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            width: auto;
+        }
+
+            .gallery.style2 article .image-gallery {
+                display: block;
+                width: 100%;
+                border-radius: 0;
+            }
+
+                .gallery.style2 article .image-gallery img {
+                    display: block;
+                    width: 100%;
+                    border-radius: 0;
+                }
+
+            .gallery.style2 article .caption {
+                -moz-align-items: center;
+                -webkit-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+                display: -moz-flex;
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                -moz-flex-direction: column;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -moz-justify-content: center;
+                -webkit-justify-content: center;
+                -ms-justify-content: center;
+                justify-content: center;
+                pointer-events: none;
+                -moz-transition: opacity 0.2s ease-in-out;
+                -webkit-transition: opacity 0.2s ease-in-out;
+                -ms-transition: opacity 0.2s ease-in-out;
+                transition: opacity 0.2s ease-in-out;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                padding: 3rem;
+                z-index: 1;
+                font-size: 0.8rem;
+            }
+
+			.gallery.style2 article .caption p {
+				text-align: center;
+			}
+
+                .gallery.style2 article .caption a {
+                    pointer-events: auto;
+                }
+
+                .gallery.style2 article .caption h3 {
+                    font-size: 1.25rem;
+                    margin-bottom: 0.25rem;
+                }
+
+                .gallery.style2 article .caption > * {
+                    max-width: 100%;
+                    margin-bottom: 1rem;
+                }
+
+                .gallery.style2 article .caption > :last-child {
+                    margin-bottom: 0;
+                }
+
+            .gallery.style2 article:hover .caption {
+                opacity: 1;
+            }
+
+        @media screen and (max-width: 980px) {
+
+            .gallery.style2 article .caption {
+                padding: 2rem;
+            }
+
+			.gallery.style2 img {
+				height: 250px;
+			}
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .gallery.style2 article .caption {
+                padding: 2rem;
+            }
+
+			.gallery.style2 img {
+				height: 200px;
+			}
+
+        }
+
+        .gallery.style2.small article {
+            width: 17.5rem;
+        }
+
+            .gallery.style2.small article .caption {
+                padding: 2rem;
+            }
+
+        @media screen and (max-width: 980px) {
+
+            .gallery.style2.small article .caption {
+                padding: 2rem;
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .gallery.style2.small article .caption {
+                padding: 2rem;
+            }
+
+        }
+
+        .gallery.style2.big article {
+            width: 30rem;
+        }
+
+            .gallery.style2.big article .caption {
+                padding: 4rem;
+            }
+
+        @media screen and (max-width: 980px) {
+
+            .gallery.style2.big article .caption {
+                padding: 3rem;
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .gallery.style2.big article .caption {
+                padding: 2rem;
+            }
+
+        }
