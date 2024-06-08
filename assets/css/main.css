@@ -3563,6 +3563,10 @@ body {
                 width: 100%;
             }
 
+#main > #four > .container {
+	padding-bottom: 0px;
+}
+
 /* Gallery */
 .gallery {
 	overflow-x: auto; /* Allows horizontal scrolling */
@@ -3570,7 +3574,7 @@ body {
   }
   
   .gallery img {
-	height: 200px;
+	height: 275px;
   }
 
 /* Gallery (style2) */
@@ -3579,8 +3583,6 @@ body {
         color: #ffffff;
         display: flex;
     }
-
-
 
         .gallery.style2 h1, .gallery.style2 h2, .gallery.style2 h3, .gallery.style2 h4, .gallery.style2 h5, .gallery.style2 h6 {
             color: #ffffff;
@@ -3597,8 +3599,6 @@ body {
                 position: absolute;
                 text-align: center;
             }
-
-
 
         .gallery.style2 article {
             -moz-flex-grow: 0;
@@ -3697,19 +3697,62 @@ body {
 				height: 250px;
 			}
 
+			.gallery.style2.small article .caption {
+                padding: 2rem;
+            }
+
+			.gallery.style2.big article .caption {
+                padding: 3rem;
+            }
+
         }
 
         @media screen and (max-width: 736px) {
+			
 
             .gallery.style2 article .caption {
-                padding: 2rem;
+                padding: 1rem;
             }
+
+			.gallery.style2 article .caption h3 {
+				font-size: 15px;
+			}
+
+			.gallery.style2 article .caption p {
+				font-size: 12px;
+			}
 
 			.gallery.style2 img {
 				height: 200px;
 			}
 
+			.gallery.style2.small article .caption {
+                padding: 2rem;
+            }
+
+			.gallery.style2.big article .caption {
+                padding: 2rem;
+            }
+
         }
+
+		@media screen and (max-width: 480px) {
+			.gallery.style2 article .caption {
+                padding: 1rem;
+            }
+
+			.gallery.style2 article .caption h3 {
+				font-size: 12px;
+			}
+
+			.gallery.style2 article .caption p {
+				font-size: 10px;
+			}
+
+			.gallery.style2 img {
+				height: 150px;
+			}
+		}
 
         .gallery.style2.small article {
             width: 17.5rem;
@@ -3719,22 +3762,6 @@ body {
                 padding: 2rem;
             }
 
-        @media screen and (max-width: 980px) {
-
-            .gallery.style2.small article .caption {
-                padding: 2rem;
-            }
-
-        }
-
-        @media screen and (max-width: 736px) {
-
-            .gallery.style2.small article .caption {
-                padding: 2rem;
-            }
-
-        }
-
         .gallery.style2.big article {
             width: 30rem;
         }
@@ -3743,18 +3770,3 @@ body {
                 padding: 4rem;
             }
 
-        @media screen and (max-width: 980px) {
-
-            .gallery.style2.big article .caption {
-                padding: 3rem;
-            }
-
-        }
-
-        @media screen and (max-width: 736px) {
-
-            .gallery.style2.big article .caption {
-                padding: 2rem;
-            }
-
-        }
