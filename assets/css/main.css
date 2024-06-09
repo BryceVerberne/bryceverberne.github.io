@@ -2850,7 +2850,6 @@ input, select, textarea {
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
 	}
 
 		#footer .copyright {
@@ -3504,4 +3503,13 @@ body {
 }
 .expertise-icon.brands:before {
     font-family: 'Font Awesome 5 Brands';
+}
+
+#footer > .container {
+	padding: 0px !important;
+}
+
+.copyright {
+	text-align: center;
+	margin: 20px 0 20px 0 !important;
 }
