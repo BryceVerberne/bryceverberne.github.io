@@ -1,0 +1,37 @@
+.academy-deliverables p {
+    margin-bottom: 10px;
+}
+
+.deliverable {
+    margin-bottom: 1em;
+}
+
+.deliverable:last-child {
+    margin-bottom: 2em;
+}
+
+.deliverable-header {    
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.deliverable-header .arrow {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.deliverable-details {
+    display: none;
+    margin-left: 3em;
+    margin-top: 5px;
+}
+
+.deliverable-details button {
+    background-color: #4ACAA8;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

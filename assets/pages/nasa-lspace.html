@@ -4,48 +4,314 @@
 		<title>NASA L'SPACE MCA Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../node_modules/lightbox2/dist/css/lightbox.css" />
+		<link rel="stylesheet" href="../css/nasa-lspace-styles.css" />
+		<link rel="stylesheet" href="../css/custom-lightbox2.css" />
 		<link rel="stylesheet" href="../css/project-styles.css" />
+		<link rel="stylesheet" href="../css/gallery.css" />
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+	<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!-- Header -->
+				<header id="header">
+					<a href="../../index.html" class="logo">Bryce Verberne</a>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/bryce-verberne/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/BryceVerberne" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:bryceverberne@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</header>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="../../index.html" class="logo">Bryce Verberne</a>
-									<ul class="icons">
-                                        <li><a href="https://www.linkedin.com/in/bryce-verberne/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-                                        <li><a href="https://github.com/BryceVerberne" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                                        <li><a href="mailto:bryceverberne@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-								</header>
+				<!-- Content -->
+					<section>
+						<header class="main">
+							<h1>NASA L'SPACE MCA</h1>
+						</header>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>NASA L'SPACE MCA</h1>
-											<p>NASA - National Aeronautics and Space Administration</p>
-										</header>
-										<p>This project page is currently under development. More information will be available soon. Stay tuned!</p>
-					
+						<span class="image main"><img src="../../media/images/projects/pic11.jpg" alt="" /></span>
+
+						<h2>Project Overview</h2>
+						<p>
+							Before I dive into my experience with NASA L’SPACE, allow me to first elaborate upon the significance of this program. The NASA L’SPACE Program 
+							is a 12-week interactive experience for undergraduate STEM students, aiming to prepare them for a career in the space industry. It is designed 
+							to provide unique, hands-on learning and insight into the dynamic world of this industry, teaching students NASA mission procedures and protocols 
+							from industry professionals. 
+						</p>
+						<p>
+							There are two L’SPACE academies, and I was a part of the Mission Concept Academy (MCA), where I collaborated with a 
+							team of 12 to complete a mission-related team project. Every term there is a new project, and for my term, Spring 2024, we were tasked with 
+							developing a Mars rover mission concept built to perform science on the surface and subsurface of Mars.
+						</p>
+
+						<h3>Roles and Responsibilities</h3>
+						
+						<p>
+							I initially took the position of Computer Hardware Engineer and worked primarily on the Command and Data Handling (CDH) subsystem of the rover, 
+							covering the data computing and telecommunication subassemblies. However, after completing the SRR, I was offered a promotion to Deputy Project 
+							Manager, where I helped lead the project alongside the Project Manager and directed a Programmatics subteam, covering risk management, budget, 
+							and scheduling. Amongst the two roles that I’ve mentioned, after the SRR, I was responsible for both for the remainder of the project.
+						</p>
+
+						<div class="academy-deliverables">
+							<h3>Academy Deliverables</h3>
+							<p>
+								NASA L’SPACE MCA was broken up into 6 deliverables that are based on NASA’s Space Flight Project Life Cycle from NPR 7120.5E. Given the academy 
+								is conceptual, we followed this design process until the end of Phase B, which is the last phase before the design is finalized and fabrication 
+								of the rover begins. Below are listed the 6 deliverables that we were assigned, which span the pre-formulation and formulation of a traditional 
+								NASA project life cycle.
+							</p>
+								<div class="deliverable-list">
+									<div class="deliverable">
+										<div class="deliverable-header">
+											<span class="arrow" onclick="toggleDetails(this)"><i class="fas fa-chevron-right"></i></span>
+											<span class="title"><b>Org Chart</b></span>
+										</div>
+										<div class="deliverable-details">
+											<p>
+												The purpose of the org chart deliverable is to guide your team in internal organization and the process of role selections.
+											</p>
+										</div>
 									</div>
-									<span class="image object">
-										<img src="../../media/images/projects/pic10.jpg" alt="" />
-									</span>
-								</section>
+									<div class="deliverable">
+										<div class="deliverable-header">
+											<span class="arrow" onclick="toggleDetails(this)"><i class="fas fa-chevron-right"></i></span>
+											<span class="title"><b>Mission Concept Review (MCR)</b></span>
+										</div>
+										<div class="deliverable-details">
+											<p>
+												The objective of the MCR Life Cycle Review (LCR) is to evaluate the feasibility of the proposed mission concept(s) as well as 
+												its ability to fulfill the needs and objectives of the program.
+											</p>
+										</div>
+									</div>
+									<div class="deliverable">
+										<div class="deliverable-header">
+											<span class="arrow" onclick="toggleDetails(this)"><i class="fas fa-chevron-right"></i></span>
+											<span class="title"><b>System Requirements Review (SRR)</b></span>
+										</div>
+										<div class="deliverable-details">
+											<p>
+												The objective of the SRR Life Cycle Review (LCR) is to evaluate whether the functional and performance requirements defined for 
+												the system are responsive to the program’s requirements on the project and represent achievable capabilities.
+											</p>
+										</div>
+									</div>
+									<div class="deliverable">
+										<div class="deliverable-header">
+											<span class="arrow" onclick="toggleDetails(this)"><i class="fas fa-chevron-right"></i></span>
+											<span class="title"><b>Mission Definition Review (MDR)</b></span>
+										</div>
+										<div class="deliverable-details">
+											<p>
+												The objective of the MDR Life Cycle Review (LCR) is to evaluate the credibility and responsiveness of the proposed mission/system 
+												architecture to the program requirements and constraints, including available resources.
+											</p>
+										</div>
+									</div>
+									<div class="deliverable">
+										<div class="deliverable-header">
+											<span class="arrow" onclick="toggleDetails(this)"><i class="fas fa-chevron-right"></i></span>
+											<span class="title"><b>Preliminary Design Review (PDR)</b></span>
+										</div>
+										<div class="deliverable-details">
+											<p>
+												The objective of the PDR Life Cycle Review (LCR) is to evaluate the completeness/consistency of the planning, technical, cost, 
+												and schedule baselines developed during Formulation.
+											</p>
+										</div>
+									</div>
+									<div class="deliverable">
+										<div class="deliverable-header">
+											<span class="arrow" onclick="toggleDetails(this)"><i class="fas fa-chevron-right"></i></span>
+											<span class="title"><b>Final PDR Presentation</b></span>
+										</div>
+										<div class="deliverable-details">
+											<p>
+												The Final PDR Presentation is a live session where a NASA review board evaluates the mission design. Board members critique the 
+												presentation, highlighting any errors or oversights. This critical step determines whether the mission advances to Phase C for 
+												fabrication or requires further refinement.
+											</p>
+										</div>
+									</div>
+								</div>
+								<p>
+									The Preliminary Design Review (PDR) is the culmination of all the work done by my team, Team 26, during the 12-week period in the NASA L’SPACE 
+									Program. This document is broken up into 10 sections, spanning a total of 216 pages. Each section required in-depth research and countless hours 
+									of work, resulting in the document provided below.
+								</p>
+								<a href="../../media/Team 26 PDR.pdf" class="button alt icon solid fa-download" target="_blank">Team 26 PDR</a>
 						</div>
-					</div>
+
+						<hr class="major" />
+
+						<h2>Interdum sed dapibus</h2>
+						<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+						<hr class="major" />
+
+						<h2>Magna etiam veroeros</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+						<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+						<hr class="major" />
+
+						<h2>Media</h2>
+						<div class="gallery">
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/Certificate of Completion Spring 2024 L'SPACE Bryce Verberne.png" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/Certificate of Completion Spring 2024 L'SPACE Bryce Verberne.png" alt="" class="first" />
+								</a>
+								<div class="caption">
+									<h3>Ipsum Dolor</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/Org Chart.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/Org Chart.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Feugiat Lorem</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/PSP_010861_2265.png" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/PSP_010861_2265.png" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Magna Amet</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/04.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/04.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Sed Tempus</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/05.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/05.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Ultrices Magna</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/06.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/06.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Sed Tempus</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/07.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/07.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Ipsum Lorem</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/08.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/08.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Magna Risus</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/09.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/09.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Tempus Dolor</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/10.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/10.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Sed Etiam</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/11.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/11.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Magna Lorem</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+							<article>
+								<a href="../../media/images/projects/nasa-lspace/gallery/12.jpg" class="image-gallery" data-lightbox="gallery">
+									<img src="../../media/images/projects/nasa-lspace/gallery/12.jpg" alt="" class="last" />
+								</a>
+								<div class="caption">
+									<h3>Ipsum Dolor</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+
+								</div>
+							</article>
+						</div>
+
+					</section>
 			</div>
+		</div>
+</div>
 
 		<!-- Scripts -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H0JEXF0JCG"></script>
 		<script src="assets/js/gtag.js"></script>
+
+		<script>
+			function toggleDetails(element) {
+				const details = element.parentElement.nextElementSibling;
+				const arrow = element;
+				
+				if (details.style.display === 'none' || details.style.display === '') {
+					details.style.display = 'block';
+					arrow.style.transform = 'rotate(90deg)';
+				} else {
+					details.style.display = 'none';
+					arrow.style.transform = 'rotate(0deg)';
+				}
+			}
+
+			function viewDeliverable(link) {
+				window.open(link, '_blank');
+			}
+		</script>
 
 	</body>
 </html>
