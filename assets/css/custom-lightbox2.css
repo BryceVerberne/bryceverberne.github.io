@@ -1,0 +1,32 @@
+/* custom.css */
+
+/* LightBox2 Custom Styles */
+.lb-close {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+.lb-image {
+    border: none !important;
+}
+
+.lb-dataContainer {
+    border: none !important;
+}
+
+.lb-details {
+    border: none !important;
+}
+
+/* LightBox2 Overlay Custom Styles */
+.lb-overlay {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.lb-container {
+    border: none !important;
+}
+
+.lb-outerContainer {
+    border: none !important;
+}
