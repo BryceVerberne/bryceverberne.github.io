@@ -1,4 +1,4 @@
-.academy-deliverables p {
+.paragraph-spacing p {
     margin-bottom: 1em;
 }
 
@@ -34,4 +34,44 @@
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+.mission-image {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+.mission-image img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.lifecycle-image {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+.lifecycle-image img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+}
+
+.head {
+    margin-top: 3.5em;
+}
+
+.pdr-button {
+    margin-bottom: 1em;
 }
