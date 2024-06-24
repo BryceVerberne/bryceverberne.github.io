@@ -83,3 +83,46 @@
 .pdr-button {
     margin-bottom: 1em;
 }
+
+.logo-container {
+    display: flex;
+    justify-content: space-around; /* Distributes logos evenly with space around them */
+    align-items: center;
+    gap: 3%;
+    padding: 0 10%;
+}
+
+.logo {
+    height: auto;
+    max-width: 175px;
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        width: 175px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 125px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 75px;
+    }
+}
