@@ -3336,7 +3336,7 @@ input, select, textarea {
 	min-width: 300px; /* Adjust the width as needed */
 	min-height: 200px; /* Adjust the height as needed */
 	position: relative;
-	background-image: url('../../media/images/portfolio/backdrop.jpeg'); /* Backdrop image */
+	background-image: url('../../media/portfolio/images/backdrop.jpeg'); /* Backdrop image */
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
