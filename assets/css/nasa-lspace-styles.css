@@ -78,7 +78,7 @@
     height: auto; /* Maintain aspect ratio */
     border: 0;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 0 auto 3.5em auto;
 }
 
 .pdr-button {
