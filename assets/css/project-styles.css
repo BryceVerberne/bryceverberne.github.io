@@ -2119,7 +2119,7 @@ input[type="button"],
   display: -ms-flex;
   display: flex;
   border-bottom: solid 5px #1a3257;
-  padding: 6em 0 1em 0;
+  padding: 3em 0 1em 0;
   position: relative; }
   #header > * {
     -moz-flex: 1;
@@ -2136,10 +2136,10 @@ input[type="button"],
     text-align: right; }
   @media screen and (max-width: 1680px) {
     #header {
-      padding-top: 5em; } }
+      padding-top: 2.5em; } }
   @media screen and (max-width: 736px) {
     #header {
-      padding-top: 6.5em; }
+      padding-top: 2em; }
       #header .logo {
         font-size: 1.25em;
         margin: 0; }}
