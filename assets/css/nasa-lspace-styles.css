@@ -44,17 +44,19 @@
     cursor: pointer;
 }
 
-.mission-image {
+.project-image {
     display: block;
     width: 100%;
+    max-width: 600px;
+    height: auto;
     border: 0;
+    margin: 0 auto 3.5em auto;
 }
 
-.mission-image img {
+.project-image img {
     display: block;
     width: 100%;
     border-radius: 5px;
-    margin-bottom: 1em;
 }
 
 .lifecycle-image {
@@ -71,13 +73,12 @@
 
 .video {
     display: block;
-    width: 100%;
+    max-width: 600px; /* Maximum width */
+    width: 100%; /* Allow the video to grow and shrink */
+    height: auto; /* Maintain aspect ratio */
     border: 0;
     border-radius: 5px;
-}
-
-.head {
-    margin-top: 3.5em;
+    margin: 0 auto;
 }
 
 .pdr-button {
