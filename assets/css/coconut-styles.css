@@ -40,3 +40,18 @@
         width: 100px;
     }
 }
+
+.project-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 0;
+    margin: 0 auto 3.5em auto;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
