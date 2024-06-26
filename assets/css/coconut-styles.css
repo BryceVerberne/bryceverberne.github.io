@@ -8,43 +8,43 @@
 
 .logo {
     height: auto;
-    max-width: 200px;
+    max-width: 175px;
 }
 
 @media (max-width: 1200px) {
-    .logo {
-        width: 200px;
-    }
-}
-
-@media (max-width: 992px) {
     .logo {
         width: 175px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .logo {
         width: 150px;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
     .logo {
         width: 125px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .logo {
         width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 75px;
     }
 }
 
 .project-image {
     display: block;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     height: auto;
     border: 0;
     margin: 0 auto 3.5em auto;
