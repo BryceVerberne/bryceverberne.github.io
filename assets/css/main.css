@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #AFDDE5 !important;
+			color: #cfd6dc !important;
 		}
 
 	strong, b {
@@ -2708,7 +2708,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background: #1a3257;
-		color: #AFDDE5;
+		color: #1a3257;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2727,11 +2727,11 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #AFDDE5;
+			color: #1a3257;
 		}
 
 		#header a {
-			color: #AFDDE5;
+			color: #1a3257;
 		}
 
 			#header a:hover {
@@ -2758,7 +2758,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #AFDDE5;
+				color: #e0ebeb;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
