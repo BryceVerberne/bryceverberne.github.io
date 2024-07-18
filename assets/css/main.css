@@ -3513,3 +3513,15 @@ body {
 	text-align: center;
 	margin: 20px 0 20px 0 !important;
 }
+
+.main-image {
+	border-radius: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto 2.25em auto;
+	width: 12em;
+}
+
+header.major {
+	text-align: center;
+}
