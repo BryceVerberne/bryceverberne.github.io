@@ -2842,7 +2842,7 @@ input, select, textarea {
 
 	#wrapper {
 		background: #fff;
-		padding-right: 23em;
+		padding-right: 16em;
 	}
 
 /* Main */
@@ -3002,12 +3002,12 @@ input, select, textarea {
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 23em;
+				width: 16em;
 				z-index: 10002;
-				-moz-transform: translateX(23em);
-				-webkit-transform: translateX(23em);
-				-ms-transform: translateX(23em);
-				transform: translateX(23em);
+				-moz-transform: translateX(16em);
+				-webkit-transform: translateX(16em);
+				-ms-transform: translateX(16em);
+				transform: translateX(16em);
 				right: 0;
 			}
 
@@ -3113,10 +3113,10 @@ input, select, textarea {
 					}
 
 			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-23em);
-				-webkit-transform: translateX(-23em);
-				-ms-transform: translateX(-23em);
-				transform: translateX(-23em);
+				-moz-transform: translateX(-16em);
+				-webkit-transform: translateX(-16em);
+				-ms-transform: translateX(-16em);
+				transform: translateX(-16em);
 			}
 
 			body.header-visible #header {
