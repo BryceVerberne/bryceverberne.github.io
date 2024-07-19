@@ -2433,7 +2433,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 2em;
+				font-size: 1.5em;
 			}
 
 /* Table */
@@ -2823,7 +2823,7 @@ input, select, textarea {
     display: block;
     padding: 0.85em 1em; /* Add horizontal padding for spacing */
     text-decoration: none;
-	font-size: 1.3em;
+	font-size: 1.15em;
 }
 
 #header > nav ul li a.active {
