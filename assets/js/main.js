@@ -125,7 +125,7 @@
 			$titleBar = $(
 				'<div id="titleBar">' +
 					'<a href="#header" class="toggle"></a>' +
-					'<span class="title">' + $('#title-logo').html() + '</span>' +
+					'<span class="title">Bryce Verberne</span>' +
 				'</div>'
 			)
 				.appendTo($body);
