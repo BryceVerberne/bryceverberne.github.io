@@ -8,12 +8,12 @@
 
 .logo {
     height: auto;
-    max-width: 100px;
+    max-width: 150px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1280px) {
     .logo {
-        width: 100px;
+        width: 125px;
     }
 }
 
