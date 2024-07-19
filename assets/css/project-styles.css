@@ -2222,13 +2222,6 @@ input[type="button"],
     #banner .image {
       max-height: 35vh; } }
 
-/* Footer */
-#footer .copyright {
-  color: #9fa3a6;
-  font-size: 0.9em; }
-  #footer .copyright a {
-    color: inherit; }
-
 /* Menu */
 #menu ul {
   -moz-user-select: none;
@@ -2308,3 +2301,46 @@ input[type="button"],
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+
+/* Footer */
+
+#footer {
+  background: #fafafa;
+  border-top: solid 6px #f4f4f4;
+  color: #c0c0c0;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;    /* centers vertically */
+  height: 4.9em;          /* set a fixed height as needed */
+}
+
+#footer .copyright {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .copyright li {
+  display: inline-block;
+  font-size: 0.75em;
+  margin: 0 1em;
+}
+
+#footer .copyright li:first-child {
+  margin-left: 0;
+}
+
+#footer .copyright li a {
+  color: inherit;
+}
+
+#footer > .container {
+  padding: 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

@@ -1709,27 +1709,27 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4.5em);
-		width: 45em;
+		width: 55em;
 	}
 
 		.container.xsmall {
-			width: 11.25em;
+			width: 16.25em;
 		}
 
 		.container.small {
-			width: 22.5em;
+			width: 27.5em;
 		}
 
 		.container.medium {
-			width: 33.75em;
+			width: 38.75em;
 		}
 
 		.container.large {
-			width: 56.25em;
+			width: 61.25em;
 		}
 
 		.container.xlarge {
-			width: 67.5em;
+			width: 72.5em;
 		}
 
 		.container.max {
@@ -2425,7 +2425,7 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 1em 0 0;
+			padding: 0 1.5em 0 0;
 		}
 
 			ul.icons li:last-child {
@@ -2433,7 +2433,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.25em;
+				font-size: 1.5em;
 			}
 
 /* Table */
@@ -2714,16 +2714,16 @@ input, select, textarea {
 		position: fixed;
 		text-align: center;
 		top: 0;
-		width: 23em;
+		width: 17em !important;
 		right: 0;
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #1a3257;
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #ffffff;
+				color: #1a3257;
 			}
 
 		#header header p {
@@ -2782,52 +2782,68 @@ input, select, textarea {
 					color: #AFDDE5;
 				}
 
-		#header > nav {
-			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-ms-flex-grow: 1;
-			flex-grow: 1;
-		}
+#header > nav {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100%;
+    flex-direction: column; /* Stack items vertically */
+	padding: 0 25px 0 0;
+}
 
-			#header > nav ul {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-			}
+#header > nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for the list items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure ul takes up full width */
+	gap: 25px;
+}
 
-				#header > nav ul li {
-					border-top: solid 2px #1a355e;
-					display: block;
-					padding: 0;
-				}
+#header > nav ul li {
+    border-bottom: solid 2px #1d3b69;
+    padding: 0;
+    width: 100%; /* Make each li take up the full width */
+    text-align: left; /* Center the text within the list item */
+}
 
-					#header > nav ul li a {
-						-moz-transition: none;
-						-webkit-transition: none;
-						-ms-transition: none;
-						transition: none;
-						border: 0;
-						color: #ffffff !important;
-						display: block;
-						padding: 0.85em 0;
-						text-decoration: none;
-					}
+#header > nav ul li a {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+    border: 0;
+    color: #ffffff !important;
+    display: block;
+    padding: 0.85em 1em; /* Add horizontal padding for spacing */
+    text-decoration: none;
+	font-size: 1.15em;
+}
 
-						#header > nav ul li a.active {
-							background: #fff;
-							color: #1a3257 !important;
-						}
+#header > nav ul li a.active {
+    background: #fff;
+    color: #1a3257 !important;
+	border-radius: 0 5px 5px 0;
+}
 
-					#header > nav ul li:first-child {
-						border-top: 0;
-					}
+#header > nav ul li:first-child {
+    border-top: 0;
+}
+
+
 
 /* Wrapper */
 
 	#wrapper {
 		background: #fff;
-		padding-right: 23em;
-	}
+		padding-right: 17em;
+	} 
 
 /* Main */
 
@@ -2889,7 +2905,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 21em;
+				width: 17em;
 			}
 
 				#header > header {
@@ -2903,7 +2919,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 21em;
+				padding-right: 17em;
 			}
 
 		/* Main */
@@ -2933,7 +2949,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 20em;
+				padding-right: 17em;
 			}
 
 	}
@@ -2986,23 +3002,23 @@ input, select, textarea {
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 23em;
+				width: 17em;
 				z-index: 10002;
-				-moz-transform: translateX(23em);
-				-webkit-transform: translateX(23em);
-				-ms-transform: translateX(23em);
-				transform: translateX(23em);
+				-moz-transform: translateX(17em);
+				-webkit-transform: translateX(17em);
+				-ms-transform: translateX(17em);
+				transform: translateX(17em);
 				right: 0;
 			}
 
-				#header > footer {
-					bottom: auto;
-					left: auto;
-					margin: 0.5em 0 0 0;
-					position: relative;
-					right: auto;
-					top: auto;
-				}
+			#header > footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: 0;
+			}
+			
 
 		/* Wrapper */
 
@@ -3097,10 +3113,10 @@ input, select, textarea {
 					}
 
 			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-23em);
-				-webkit-transform: translateX(-23em);
-				-ms-transform: translateX(-23em);
-				transform: translateX(-23em);
+				-moz-transform: translateX(-17em);
+				-webkit-transform: translateX(-17em);
+				-ms-transform: translateX(-17em);
+				transform: translateX(-17em);
 			}
 
 			body.header-visible #header {
@@ -3513,3 +3529,16 @@ body {
 	text-align: center;
 	margin: 20px 0 20px 0 !important;
 }
+
+.main-image {
+	border-radius: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto 2.25em auto;
+	width: 12em;
+}
+
+header.major {
+	text-align: center;
+}
+
