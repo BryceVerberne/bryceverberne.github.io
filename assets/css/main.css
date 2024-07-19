@@ -2714,7 +2714,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: center;
 		top: 0;
-		width: 16em !important;
+		width: 17em !important;
 		right: 0;
 	}
 
@@ -2842,8 +2842,8 @@ input, select, textarea {
 
 	#wrapper {
 		background: #fff;
-		padding-right: 16em;
-	}
+		padding-right: 17em;
+	} 
 
 /* Main */
 
@@ -2905,7 +2905,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 21em;
+				width: 17em;
 			}
 
 				#header > header {
@@ -2919,7 +2919,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 21em;
+				padding-right: 17em;
 			}
 
 		/* Main */
@@ -2949,7 +2949,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 16em;
+				padding-right: 17em;
 			}
 
 	}
@@ -3002,12 +3002,12 @@ input, select, textarea {
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 16em;
+				width: 17em;
 				z-index: 10002;
-				-moz-transform: translateX(16em);
-				-webkit-transform: translateX(16em);
-				-ms-transform: translateX(16em);
-				transform: translateX(16em);
+				-moz-transform: translateX(17em);
+				-webkit-transform: translateX(17em);
+				-ms-transform: translateX(17em);
+				transform: translateX(17em);
 				right: 0;
 			}
 
@@ -3113,10 +3113,10 @@ input, select, textarea {
 					}
 
 			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-16em);
-				-webkit-transform: translateX(-16em);
-				-ms-transform: translateX(-16em);
-				transform: translateX(-16em);
+				-moz-transform: translateX(-17em);
+				-webkit-transform: translateX(-17em);
+				-ms-transform: translateX(-17em);
+				transform: translateX(-17em);
 			}
 
 			body.header-visible #header {
