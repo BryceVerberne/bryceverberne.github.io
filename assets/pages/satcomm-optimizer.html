@@ -80,13 +80,28 @@
 
 						<h2>Project Roadmap</h2>
 
+						<h3>Visualizations</h3>
+
 						<div class="row">
 							<div class="col-6 col-12-small">
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									We employ CesiumJS, an open-source platform renowned for visualizing 3D geospatial data with accuracy within one meter. 
+									Utilizing this API, we can display Iridium's satellite constellation with remarkable precision, ensuring the data we 
+									collect is both dependable and realistic.
 								</p>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									Our simulation features 81 Iridium-NEXT satellites, with their positions updated in real-time using TLE data propagated 
+									through Python. This approach ensures positional accuracy within less than 1 km of error. Each satellite's orbital period 
+									is displayed by accounting for its current mean motion and semi-major axis, which are continuously updated and recalculated 
+									as the satellite orbits. Additionally, we visualize each satellite's footprint, with a radius of 2,400,000 meters, as specified 
+									by Iridium.
+								</p>
+								<p>
+									To process the information transmitted by the Iridium-NEXT satellites, we have integrated entities into our simulation 
+									representing the positions of each ground station utilized by Iridium. These ground stations are mapped in key locations, 
+									including Fairbanks, Alaska; Tempe, Arizona; Punta Arenas, Chile; Svalbard, Norway; and Izhevsk, Russia. This integration allows 
+									us to accurately represent the communication links between the satellites and ground stations, providing a comprehensive view of 
+									the network.
 								</p>
 							</div>
 							<div class="col-6 col-12-small">
@@ -97,6 +112,8 @@
 								<p class="caption">CAPTION HERE</p>
 							</div>
 						</div>
+
+						<h3>Data Processing</h3>
 
 					</section>
 			</div>
