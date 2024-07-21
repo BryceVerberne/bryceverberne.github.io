@@ -8,30 +8,30 @@
 
 .logo {
     height: auto;
-    max-width: 150px;
+    max-width: 125px;
 }
 
 @media (max-width: 1280px) {
     .logo {
-        width: 125px;
+        width: 105px;
     }
 }
 
 @media (max-width: 992px) {
     .logo {
-        width: 100px;
+        width: 85px;
     }
 }
 
 @media (max-width: 768px) {
     .logo {
-        width: 75px;
+        width: 65px;
     }
 }
 
 @media (max-width: 576px) {
     .logo {
-        width: 50px;
+        width: 45px;
     }
 }
 
