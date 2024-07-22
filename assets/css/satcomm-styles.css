@@ -6,31 +6,25 @@
     padding: 0 10%;
 }
 
-.logo {
+.logo-item {
     height: auto;
-    max-width: 125px;
-}
-
-@media (max-width: 1280px) {
-    .logo {
-        width: 105px;
-    }
+    max-width: 85px;
 }
 
 @media (max-width: 992px) {
-    .logo {
-        width: 85px;
+    .logo-item {
+        width: 75px;
     }
 }
 
 @media (max-width: 768px) {
-    .logo {
-        width: 65px;
+    .logo-item {
+        width: 55px;
     }
 }
 
 @media (max-width: 576px) {
-    .logo {
+    .logo-item {
         width: 45px;
     }
 }
