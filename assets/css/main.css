@@ -2650,48 +2650,6 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-/* Features */
-
-.features article .image a {
-	margin-top: 5px;
-	min-width: 100px;
-}
-
-.features article {
-	border-top: solid 3px #f4f4f4;
-	margin-bottom: 2.25em;
-	padding-top: 2.25em;
-}
-
-	.features article:first-child {
-		border-top: 0;
-		padding-top: 0;
-	}
-
-	.features article .image {
-		display: inline-block;
-		padding-right: 2.5em; /* Adjust padding as needed */
-		vertical-align: top; /* Align image to the top */
-		width: 48%;
-
-	}
-
-		.features article .image img {
-			display: block;
-			width: 100%;
-		}
-
-	.features article .inner {
-		display: inline-block;
-		vertical-align: top; /* Align text to the top */
-		width: 50%;
-	}
-
-		.features article .inner > :last-child {
-			margin-bottom: 0;
-		}
-
-
 /* Header */
 
 	#header {
@@ -3182,20 +3140,6 @@ input, select, textarea {
 					font-size: 1.5em;
 				}
 
-		/* Features */
-
-			.features article .image {
-				display: block;
-				margin: 0 0 2.25em 0;
-				padding-right: 0;
-				width: 100%;
-			}
-
-			.features article .inner {
-				display: block;
-				width: 100%;
-			}
-
 		/* Header */
 
 			#header {
@@ -3542,3 +3486,58 @@ header.major {
 	text-align: center;
 }
 
+/* Features */
+.features article .image a {
+    margin-top: 5px;
+    min-width: 100px;
+}
+
+.features article {
+    border-top: solid 3px #f4f4f4;
+    margin-bottom: 2.25em;
+    padding-top: 2.25em;
+}
+
+.features article:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.features article .image {
+    display: inline-block;
+    padding-right: 2.5em; /* Adjust padding as needed */
+    vertical-align: top; /* Align image to the top */
+    width: 48%;
+}
+
+.features article .image img {
+    display: block;
+    width: 100%;
+}
+
+.features article .inner {
+    display: inline-block;
+    vertical-align: top; /* Align text to the top */
+    width: 50%;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+    .features article {
+        display: flex;
+        flex-direction: column-reverse; /* Reverse the order of the image and text */
+    }
+
+    .features article .image {
+        display: block;
+        margin: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .features article .inner {
+        display: block;
+        width: 100%;
+    }
+}
