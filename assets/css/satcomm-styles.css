@@ -38,14 +38,14 @@
 
 .video-container {
     display: block;
-    width: 90%;
+    width: 85%;
     text-align: center;
     margin: 0 auto;
 }
 
 .image-container {
     display: block;
-    width: 100%;
+    width: 85%;
     max-width: 350px;
     text-align: center;
     margin: 0 auto;
