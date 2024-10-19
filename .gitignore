@@ -3,3 +3,6 @@
 
 # Ignore all .json files
 *.json
+
+node_modules/
+package-lock.json

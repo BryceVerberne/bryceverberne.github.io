@@ -4,8 +4,9 @@
 		<title>Bryce Verberne's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./node_modules/lightbox2/dist/css/lightbox.css" />
-		<link rel="stylesheet" href="./assets/css/custom-lightbox2.css" />
+		<meta http-equiv='cache-control' content='no-cache'> 
+		<meta http-equiv='expires' content='0'> 
+		<meta http-equiv='pragma' content='no-cache'>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/gallery.css" />
 
@@ -14,12 +15,6 @@
 
 		<!-- Header -->
 			<section id="header">
-				<header>
-					<span class="image avatar"><img src="media/images/portfolio/avatar.jpeg" alt="" /></span>
-					<h1 id="logo"><a href="#">Bryce Verberne</a></h1>
-					<p>Computer Science undergrad at ASU  <br />
-						& Software Engineer at SDSL</p>
-				</header>
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">About me</a></li>
@@ -33,24 +28,25 @@
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/bryce-verberne/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
 						<li><a href="https://github.com/BryceVerberne" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:bryceverberne@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Main -->
 					<div id="main">
-
 						<!-- One -->
 							<section id="one">
 								<div class="container">
-									<h3>About me</h3>
+									<img src="media/portfolio/images/banner.jpg" class="main-image" alt="" />
+									<header class="major">
+										<h2>Hi, I'm Bryce Verberne</h2>
+										<p>A Computer Science major at ASU and Software Engineer at SDSL.</p>
+									</header>
 									<p class="resume">
-										Hi! I’m Bryce Verberne, a Computer Science major currently pursuing a Bachelor’s degree with a concentration in Software 
-										Engineering at Arizona State University. I am an enthusiast for both technology and aerospace, and am excited by the idea 
+										I am pursuing a Bachelor’s degree with a concentration in Software 
+										Engineering at Arizona State University. With a passion for both technology and aerospace, I am excited by the idea 
 										to one day have a career that combines the two. An area that has particularly captured my fascination is telecommunications, 
 										which is shown in the various projects that I’ve undertaken. I am currently a Software Engineer at the Sun Devil Satellite 
 										Laboratory at ASU, where I work on the Coconut CubeSat partnered with NASA, a 1U satellite that will be launched into orbit 
@@ -66,7 +62,7 @@
 										and various other skills and experiences that are discussed further in my skills and projects outlined below.
 									</p>
 
-									<a href="./media/Bryce_Verberne_Resume.pdf" class="button alt icon solid fa-download" target="_blank">Resume</a>
+									<a href="./media/portfolio/Resume.pdf" class="button alt icon solid fa-download" target="_blank">Resume</a>
 									
 								</div>
 							</section>
@@ -134,8 +130,27 @@
 									<div class="features">
 										<article>
 											<div class="image">
+												<div class="frame-container rover-image">
+													<img src="./media/portfolio/images/RoverCADDesign.png" alt="" class="component-image"/>
+												</div>
+												<a href="./assets/pages/nasa-lspace.html" class="button alt small">Learn More</a>
+											</div>
+											<div class="inner">
+												<header>
+													<h4>NASA L'SPACE MCA</h4>
+													<p>Jan 2024 - April 2024</p>
+												</header>
+												<p>
+													At the NASA L'SPACE Mission Concept Academy (MCA), I led a 12-member team as Deputy Project Manager and designed the command and data 
+													handling subsystem as the computer hardware engineer for the Mars rover mission concept, Endurance. This mission concept was one of the 
+													highest scoring for the term - a rare and notable achievement.
+												</p>
+											</div>
+										</article>
+										<article>
+											<div class="image">
 												<div class="frame-container">
-													<img src="./media/images/portfolio/coconut-cubesat.png" alt="" class="component-image"/>
+													<img src="./media/portfolio/images/coconut-cubesat.png" alt="" class="component-image"/>
 												</div>
 												<a href="./assets/pages/coconut-cubesat.html" class="button alt small info-button">Learn More</a>
 											</div>
@@ -155,7 +170,7 @@
 										<article>
 											<div class="image">
 												<div class="frame-container">
-													<img src="./media/images/portfolio/Satcomm-Optimizer.png" alt="" class="component-image"/>
+													<img src="./media/portfolio/images/Satcomm-Optimizer.png" alt="" class="component-image"/>
 												</div>
 												<a href="./assets/pages/satcomm-optimizer.html" class="button alt small">Learn More</a>
 											</div>
@@ -168,25 +183,6 @@
 													SatComm Optimizer is a personal project, designed to enhance satellite communication networks by developing advanced simulation models. 
 													Taking into account factors such as bandwidth and signal latency, it utilizes sophisticated algorithms and data 
 													visualization to analyze and optimize network performance.
-												</p>
-											</div>
-										</article>
-										<article>
-											<div class="image">
-												<div class="frame-container rover-image">
-													<img src="./media/images/portfolio/RoverCADDesign.png" alt="" class="component-image"/>
-												</div>
-												<a href="./assets/pages/nasa-lspace.html" class="button alt small">Learn More</a>
-											</div>
-											<div class="inner">
-												<header>
-													<h4>NASA L'SPACE MCA</h4>
-													<p>Jan 2024 - April 2024</p>
-												</header>
-												<p>
-													At the NASA L'SPACE Mission Concept Academy (MCA), I led a 12-member team as Deputy Project Manager and designed the command and data 
-													handling subsystem as the computer hardware engineer for the Mars rover mission concept, Endurance. This mission concept was one of the 
-													highest scoring for the term - a rare and notable achievement.
 												</p>
 											</div>
 										</article>
@@ -349,12 +345,12 @@
 									</form>
 								</div>
 							</section>
-							
+
 				<!-- Footer -->
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Copyright &copy; Bryce Verberne 2024. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
@@ -369,7 +365,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-H0JEXF0JCG"></script>
+			<script src="assets/js/gtag.js"></script>
 
 	</body>
 </html>
+

@@ -1,0 +1,155 @@
+.paragraph-spacing p {
+    margin-bottom: 1em;
+}
+
+.list-margin li {
+    margin-left: 2em;
+}
+
+.programmatics-margin {
+    margin-top: 3em !important;
+}
+
+.deliverable {
+    margin-bottom: 1em;
+}
+
+.deliverable:last-child {
+    margin-bottom: 2em;
+}
+
+.deliverable-header {    
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.deliverable-header .arrow {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.deliverable-details {
+    display: none;
+    margin-left: 3em;
+    margin-top: 5px;
+}
+
+.deliverable-details button {
+    background-color: #4ACAA8;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 0;
+    margin: 0 auto 0 auto;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.lifecycle-image {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+.lifecycle-image img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video {
+    display: block;
+    max-width: 600px; /* Maximum width */
+    width: 100%; /* Allow the video to grow and shrink */
+    height: auto; /* Maintain aspect ratio */
+    border: 0;
+    border-radius: 5px;
+    margin: 0 auto 0 auto;
+}
+
+.pdr-button {
+    margin-bottom: 1em;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around; /* Distributes logos evenly with space around them */
+    align-items: center;
+    gap: 3%;
+    padding: 0 10%;
+}
+
+.logo {
+    height: auto;
+    max-width: 175px;
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        width: 175px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 125px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 75px;
+    }
+}
+
+.caption {
+    margin: 0.5em 0 3.5em 0;
+    padding: 0 2em;
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .caption {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .caption {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .caption {
+        font-size: 0.7rem;
+    }
+}

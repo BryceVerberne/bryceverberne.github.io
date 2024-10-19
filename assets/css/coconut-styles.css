@@ -1,0 +1,83 @@
+.logo-container {
+    display: flex;
+    justify-content: space-around; /* Distributes logos evenly with space around them */
+    align-items: center;
+    gap: 3%;
+    padding: 0 10%;
+}
+
+.logo {
+    height: auto;
+    max-width: 175px;
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        width: 175px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 125px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 75px;
+    }
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 0;
+    margin: 0 auto 0 auto;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.caption {
+    margin: 0.5em 0 3.5em 0;
+    padding: 0 2em;
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .caption {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .caption {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .caption {
+        font-size: 0.7rem;
+    }
+}
