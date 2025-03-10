@@ -56,14 +56,6 @@
     border-radius: 5px;
 }
 
-.caption {
-    margin: 0.5em 0 3.5em 0;
-    padding: 0 2em;
-    text-align: center;
-    font-style: italic;
-    font-size: 1rem;
-}
-
 @media (max-width: 992px) {
     .caption {
         font-size: 0.9rem;

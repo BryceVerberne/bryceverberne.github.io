@@ -86,7 +86,7 @@
     -moz-transition: opacity 0.2s ease-in-out;
     -webkit-transition: opacity 0.2s ease-in-out;
     -ms-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -123,7 +123,7 @@
 }
 
 .gallery article:hover .caption {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 @media screen and (max-width: 980px) {
