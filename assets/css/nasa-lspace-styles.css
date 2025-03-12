@@ -87,24 +87,20 @@
 
 .logo-container {
     display: flex;
-    justify-content: space-around; /* Distributes logos evenly with space around them */
+    justify-content: space-evenly; /* Centers the logos */
     align-items: center;
-    gap: 3%;
-    padding: 0 10%;
+    gap: 3%; /* Adjust the gap as needed */
+    width: 100%; /* Ensures the container takes up the full width */
+    padding: 0; /* Remove extra side padding */
 }
 
 .logo {
     height: auto;
-    max-width: 175px;
+    max-width: 150px;
 }
 
+/* Consolidated media queries for logo sizing */
 @media (max-width: 1200px) {
-    .logo {
-        width: 175px;
-    }
-}
-
-@media (max-width: 992px) {
     .logo {
         width: 150px;
     }
@@ -125,6 +121,12 @@
 @media (max-width: 576px) {
     .logo {
         width: 75px;
+    }
+}
+
+@media (max-width: 414px) {
+    .logo {
+        width: 60px;
     }
 }
 
