@@ -203,3 +203,8 @@
 .gallery.big article .caption {
     padding: 4rem;
 }
+
+/* Apply temporary Safari media sizing fix */
+::-webkit-full-page-media, _:future, :root .gallery article {
+    width: 25rem;
+}
