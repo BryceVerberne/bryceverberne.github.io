@@ -70,7 +70,7 @@
 							The initiative is part of the Arizona Space Grant program, which is funded by NASA, highlighting the significant role that 
 							NASA plays in supporting space-focused education and research. Additionally, the ANSR team is instrumental in coordinating 
 							the launch operations, ensuring that our payloads are successfully integrated with the high-altitude weather balloons. 
-							Together, these organizations–SDSL, NASA Arizona State University, Arizona Space Grant, and ANSR–make this project 
+							Together, these organizations—SDSL, NASA Arizona State University, Arizona Space Grant, and ANSR—make this project 
 							possible.
 						</p>
 
@@ -98,9 +98,10 @@
 									industry-relevant practices and fostered a fast-paced, quality-driven environment by adopting Agile methodologies.
 								</p>
 								<p>
-									To address previous project challenges, I spearheaded the adoption of Jira and Scrum management. I broke down our work 
-									into one-week sprints, each culminating in a retrospective. As Scrum Master, I managed our project board, identified 
-									bottlenecks, coached team members, and leveraged Jira metrics to drive continuous process improvements.
+									To address previous project challenges, I spearheaded the adoption of <a href="https://www.atlassian.com/software/jira">
+									Jira</a> and Scrum management. I broke down our work into one-week sprints, each culminating in a retrospective. As Scrum 
+									Master, I managed our project board, identified bottlenecks, coached team members, and leveraged Jira metrics to drive 
+									continuous process improvements.
 								</p>
 								<p>
 									I organized our software team into three specialized subteams—flight software (FSW), ground software (GSW), and data 
@@ -120,39 +121,58 @@
 						<h3>Flight Software (FSW)</h3>
 						<p>
 							Beyond my project management and leadership roles, I have been actively involved in the design and development of the payload’s 
-							flight software, which is primarily written in C++. Working within a dedicated four-member team, we focus on critical functions such 
-							as payload bootup, data collection, storage, and transmission during flight.
+							flight software, primarily written in C++. Working with a dedicated four-member team, we focus on critical functions such as 
+							payload bootup, data collection, storage, and transmission during flight.
+						<p>
+							A key enhancement I led was transitioning from CSV-based data handling (used in Fall 2024) to a more efficient packet-based 
+							system. This upgrade significantly improves data storage efficiency and minimizes data loss. I enhanced several scientific 
+							sensors (e.g., BME680, MTK33339) to support packet formatting and updated our flash memory protocols to ensure reliable data 
+							writes and reads.
 						</p>
 						<p>
-							A key enhancement I led was transitioning from CSV-based data handling (as used in Fall 2024) to a more efficient packet-based system. 
-							This change significantly improves data storage efficiency and minimizes data loss. I enhanced several scientific sensors 
-							(e.g., BME680, MTK33339) to support packet formatting and updated our flash memory protocols to ensure reliable data writes and reads.
-						</p>
-						<p>
-							Special emphasis was placed on optimizing the onboard W25Q128 flash memory. Building on my initial integration of flash memory in Fall 
-							2024, I spearheaded its further development by designing an onboard file system to effectively manage and distinguish different types 
-							of flight data. Additionally, I introduced payload commands (e.g., DELETE, DOWNLOAD F#, STATUS) to improve communication with the 
-							ground software (GSW), and provided ongoing mentorship to the FSW team to maintain steady progress. 
+							Special emphasis was placed on optimizing the onboard <a href="https://www.adafruit.com/product/5643">W25Q128 SPI flash memory</a>. 
+							Building on my initial experience integrating flash into the payload in Fall 2024, I advanced its development by designing an onboard 
+							file system to effectively manage and distinguish different types of flight data. Additionally, I introduced payload commands 
+							(e.g., DELETE, DOWNLOAD F#, STATUS) to improve communication with the ground software (GSW) and provided ongoing mentorship to the FSW 
+							team to maintain steady progress.
 						</p>
 
 						<h3>Ground Software (GSW)</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							In parallel with my FSW contributions, I have been actively involved in the development of the ground software, primarily written 
+							in Python. Our four-member GSW team focuses on ensuring smooth communication between the ground station and the payload, handling 
+							data reception, processing, and routing.
+						</p>
+						<p>
+							We developed a multi-threaded pipeline system that breaks the ground software into serial input, serial sorter, and packet decoder 
+							modules, ensuring the system can keep pace with data demands. I was responsible for developing the packet decoder module, which 
+							dissects each packet to extract validation bytes (e.g., sync bytes, checksum) and converts scientific sensor data into CSV format 
+							for subsequent routing to 3D and 2D data processing. 
+						</p>
+						<p>
+							The ground software is still under development as we work towards interfacing GSW with payload commands and shifting from a serial 
+							interface to an intuitive GUI for improved controls.
 						</p>
 
 						<h3>Data Processing</h3>
 						<div class="row">
 							<div class="col-6 col-12-small">
 								<p>
-									In addition to my work on FSW and GSW, I spearheaded the development of our 3D data visualization framework. Drawing on my 
-									experience with CesiumJS from my SatComm Optimizer project, I used JavaScript, HTML, and CSS to animate the payload’s movements 
-									by leveraging longitude, latitude, and height data derived from Fall 2024’s launch. By incorporating timestamps for each flight 
-									data point, the animated payload accurately reflects the real-time intervals observed during the flight, providing an interactive 
-									and precise model for data analysis. To streamline the process, I developed a Python-based data parser that converts raw GPS data 
-									into a Cesium-readable JSON format.
+									In addition to my contributions to FSW and GSW, I played a key role in enhancing our data processing efforts. Our 
+									three-member Data Processing team focuses on converting post-flight data into useful visualizations that drive scientific 
+									understanding. 
 								</p>
 								<p>
-									This framework is still a work in progress as we aim to enhance its scientific capabilities—such as displaying atmospheric 
+									Most notably, I developed the software that bridged the gap between raw data and its visualization. Drawing on my 
+									experience with <a href="https://cesium.com/platform/cesiumjs/">CesiumJS</a> from my 
+									<a href="https://bryceverberne.com/assets/pages/satcomm-optimizer.html">SatComm Optimizer project</a>, I used JavaScript, 
+									HTML, and CSS to animate the payload’s movements using longitude, latitude, and height data derived from Fall 2024’s launch. 
+									By incorporating timestamps for each flight data point, the animated payload accuracy reflects the real-time intervals 
+									observed during the flight, providing an interactive and precise model for data analysis. To streamline the process, I 
+									developed a Python-based data parser that converts raw GPS data into a Cesium-readable JSON format. 
+								</p>
+								<p>
+									This framework is still a work in progress as we aim to improve its scientific capabilities—such as displaying atmospheric 
 									layers and calculating real-time speed. I am leading our data processing team as we evolve these visualizations toward the 
 									goal of displaying live data during the payload’s ascent and descent.
 								</p>
@@ -162,7 +182,7 @@
 								<a href="../../media/projects/ascend/data-visualizations.jpg" class="project-image" data-lightbox="gallery">
 									<img src="../../media/projects/ascend/data-visualizations.jpg" alt="" />
 								</a>
-								<p class="image-caption"><b>3D Data Visualizations</b>: An interactive display of the payload's trajectory using Fall 2024 GPS data..</p>
+								<p class="image-caption"><b>3D Data Visualizations</b>: An interactive display of the payload's trajectory using Fall 2024 GPS data.</p>
 							</div>
 						</div>
 
@@ -174,14 +194,22 @@
 							<span style="font-weight: normal; font-size: 0.8rem; color: #75787b; vertical-align: middle;"> - View GitHub Repository</span>
 						</h2>
 
-						<h3>Project Management</h3>
+						<h3>Project Management &amp; Leadership</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							In Fall 2024, I began my journey with ASCEND as a member of the Software team. I was highly proactive—frequently mentoring peers and even 
+							hosting my own office hours to facilitate progress. Recognized for these efforts, I was quickly promoted to Deputy Software Lead, where I 
+							co-managed a 6-member team alongside the Software Lead. In this role, I focused on fostering clear communication among team members, 
+							ensuring everyone was aligned with project requirements and tasks. Additionally, I remained actively involved in software development, 
+							using my hands-on experience to guide and mentor the team.
 						</p>
 
 						<h3>Flight Software (FSW)</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Beyond my leadership responsibilities, I played a key role in advancing the flight software onboard the payload. Most notably, I 
+							refactored the ASCEND legacy codebase to a modular, object-oriented design in C++, which allowed for seamless integration of new hardware 
+							and sensor interfaces (e.g., INA260, SGP30) and supported faster communication protocols like I2C and SPI. Moreover, I was responsible 
+							for incorporating the W25Q128 SPI flash memory onto the payload, establishing a more reliable storage solution compared to SD cards. I 
+							developed the foundational software that ensures data is read and written reliably, effectively preventing overwrites and data corruption. 
 						</p>
 
 						<div class="container">
@@ -207,8 +235,8 @@
 										<img src="../../media/projects/ascend/gallery/payload.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Final Payload</h3>
+										<p>An image of the fully stacked payload, ready for launch.</p>
 		
 									</div>
 								</article>
@@ -217,8 +245,8 @@
 										<img src="../../media/projects/ascend/gallery/earth-curvature.jpg" alt="" class="first" />
 									</a>
 									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Earth's Curvature</h3>
+										<p>A photo captured by the payload, showcasing Earth's curvature from an altitude exceeding 100,000 feet.</p>
 		
 									</div>
 								</article>
@@ -227,8 +255,8 @@
 										<img src="../../media/projects/ascend/gallery/preflight-testing.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Payload Software Testing</h3>
+										<p>An image of the partially assembled payload undergoing final software tests prior to complete assembly and launch.</p>
 		
 									</div>
 								</article>
@@ -237,8 +265,9 @@
 										<img src="../../media/projects/ascend/gallery/payload-lineup.JPG" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Payload Launch Train</h3>
+										<p>This photo captures the moment just before launch—team members from each school hold their payloads, ready to sprint as the weather balloon ascends.</p>
+										<p>(I'm at the back representing the ASU StratoDevils)</p>
 		
 									</div>
 								</article>
@@ -247,8 +276,8 @@
 										<img src="../../media/projects/ascend/gallery/payload-balloon.JPG" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Payload Weather Balloon</h3>
+										<p>A photo of the ASCEND weather balloon carrying the ASU StratoDevil payload alongside other team payloads.</p>
 
 									</div>
 								</article>
@@ -257,8 +286,8 @@
 										<img src="../../media/projects/ascend/gallery/recovered-payload.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Post-Flight Payload</h3>
+										<p>An image of the StratoDevil payload following its descent from over +100,000 feet.</p>
 									</div>
 								</article>
 							</div>
@@ -271,7 +300,7 @@
 			<section id="footer">
 				<div class="container">
 				<ul class="copyright">
-					<li>Copyright &copy; Bryce Verberne 2024. All rights reserved.</li>
+					<li>Copyright &copy; Bryce Verberne 2025. All rights reserved.</li>
 				</ul>
 				</div>
 			</section>
