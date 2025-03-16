@@ -19,7 +19,7 @@
 }
 
 .gallery img {
-    height: 275px;
+    height: 360px;
 }
 
 .gallery h1, .gallery h2, .gallery h3, .gallery h4, .gallery h5, .gallery h6 {
@@ -132,7 +132,7 @@
     }
 
     .gallery img {
-        height: 250px;
+        height: 335px;
     }
 
     .gallery.small article .caption {
@@ -158,7 +158,7 @@
     }
 
     .gallery img {
-        height: 200px;
+        height: 285px;
     }
 
     .gallery.small article .caption {
@@ -184,7 +184,7 @@
     }
 
     .gallery img {
-        height: 150px;
+        height: 235px;
     }
 }
 
@@ -206,5 +206,5 @@
 
 /* Apply temporary Safari media sizing fix */
 ::-webkit-full-page-media, _:future, :root .gallery article {
-    width: 25rem;
+    width: 33rem;
 }
