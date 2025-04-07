@@ -124,3 +124,29 @@
 
 .gallery.big article{ width:30rem; }
 .gallery.big article .caption{ padding:4rem; }
+
+
+.gallery-wrapper{ position:relative; }
+
+.scroll-arrow{
+    position:absolute;
+    top:50%; transform:translateY(-50%);
+    width:3rem; height:3rem;
+    border:none; border-radius:50%;
+    background:rgba(0,0,0,.4);
+    color:#fff; font-size:1.25rem;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    opacity:0;
+    transition:opacity .2s ease, background .2s ease;
+    z-index:3;
+}
+.scroll-arrow.left  { left:.5rem;  }
+.scroll-arrow.right { right:.5rem; }
+
+.gallery-wrapper:hover .scroll-arrow{ opacity:1; }
+.scroll-arrow:hover{ background:rgba(0,0,0,.7); }
+
+@media (hover:none){
+    .scroll-arrow{ display:none; }
+}
